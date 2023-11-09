@@ -1,0 +1,99 @@
+.delivering{
+    padding: 140px 0;
+    background-color: #004047;
+    background-image: url('../img/delivering1.png'), url('../img/delivering2.png');
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
+.delivering__title{
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    span{
+        color: #79C8C7;
+    }
+}
+
+.delivering__list{
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.delivering__item{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    max-width: 380px;
+    margin-top: 36px;
+    p{
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 25px;
+        
+        &::before{
+            content: "";
+            width: 67px;
+            height: 56px;
+            display: block;
+            background-image: url('../img/bef.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 0 auto;
+            margin-bottom: -20px;
+        }
+    }
+    h4{
+        margin-top: 24px;
+        color: #79C8C7;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    i{
+        color: white;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    img{
+        margin-top: 32px;
+        width: 62px;
+        height: 62px;
+    }
+}
+@media (max-width:900px) {
+    .delivering__list{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:790px) {
+    .delivering__item{
+       max-width: 80%;
+    }
+}
+@media (max-width:769px) {
+    .delivering__title{
+        font-size: 32px;
+    }
+}
+@media (max-width:471px) {
+    .delivering__title{
+        padding: 0 14px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 32px;
+    }
+    .delivering__item{
+        max-width: 95%;
+        padding: 0 0; 
+     }
+}
